@@ -1,117 +1,129 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* The following apply to the header*/
 .header {
-    padding: 15px 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: black;
-    color: fuchsia;
-    position: fixed;
-    width: 100%
-    
+  padding: 15px 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: black;
+  color: fuchsia;
+  position: fixed;
+  width: 100%;
 }
 
 .header h1 {
-    display: flex;
-    font-size: 48px;
-    margin-left: 90px;
+  display: flex;
+  font-size: 48px;
+  margin-left: 90px;
 }
 
 .header nav {
-    padding-top: 15px 15px;
-    margin-right: 60px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+  padding-top: 15px 15px;
+  margin-right: 60px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
 .header nav ul li {
-    display: inline-flex;
-    margin-left: 25px;
+  display: inline-flex;
+  margin-left: 25px;
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*the following applies applies to all three sections*/
 .all-sections {
-    width: 100%;
-    margin-top: 0px;
-    padding: 150px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: darkslateblue;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0px;
+  padding: 150px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: darkslateblue;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .all-sections h2 {
-    font-size: 40px; 
-    font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 /*this holds the content in the first section 'about me*/
 .box {
-    border: 10px solid black;
-    padding: 20px;
-    margin: 80px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-  }
+  padding: 30px;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  flex-flow: wrap;
+  flex-direction: initial;
+}
 
-  /*the following is a grid holding the place holder images that will eventually be links to applications*/
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    max-width: 940px;
-    margin-top: 150px;
-    padding: 30px;
+@media (max-width: 375px) {
+  .box {
+    display: none;
   }
+}
 
-  .grid-item {
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    border: solid;
-    color: black;
-    text-align: center;
+@media (max-width: 39.9375em) {
+  .box {
+    display: none;
   }
+}
 
-  /*the following holds the contact section text*/
-  .contact-section {
-    font-size: 30px;
-    display: inline-block;
-    padding: 0 100px 50px 100px;
-    border-bottom: 3px solid;
-    margin-bottom: 25px;
-    color: fuchsia;
-    text-align: center;
-  }
+/*the following is a grid holding the place holder images that will eventually be links to applications*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  max-width: 940px;
+  margin-top: 150px;
+  padding: 30px;
+}
+
+.grid-item {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: solid;
+  color: black;
+  text-align: center;
+}
+
+/*the following holds the contact section text*/
+.contact-section {
+  font-size: 30px;
+  display: inline-block;
+  padding: 0 100px 50px 100px;
+  border-bottom: 3px solid;
+  margin-bottom: 25px;
+  color: fuchsia;
+  text-align: center;
+}
 
 /*the following applies to the footer*/
 .footer {
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    font-size: 15px;
-    color: pink;
-    background-color: black;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: pink;
+  background-color: black;
 }
 
 .contact-section h3 {
-    color: white;
+  color: white;
 }
 
-
-
-
-
+#main-image {
+  padding-bottom: 40px;
+}
