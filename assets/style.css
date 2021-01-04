@@ -39,32 +39,9 @@ a {
     text-decoration: none;
 }
 
-
-.center {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    font-size: 40px;
-}
-
-
-
-p {
-    font-size: 30px;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/*the following applies applies to all three sections*/
 .all-sections {
+    width: 100%;
     margin-top: 0px;
     padding: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -75,58 +52,22 @@ p {
     flex-wrap: wrap;
 }
 
-
-
-/* The following declartions apply to the footer*/
-.footer {
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    font-size: 15px;
-    color: pink;
-    background-color: black;
+.all-sections h2 {
+    font-size: 40px; 
+    font-weight: bold;
 }
 
-
-
-
-
-  .section-title {
-    font-size: 30px;
-    display: inline-block;
-    padding: 0 100px 50px 100px;
-    border-bottom: 3px solid;
-    margin-bottom: 25px;
-    color: fuchsia;
-    text-align: center;
-  }
-
-  /*the heading in the contact section is not white*/
-  .white {
-      color: white;
-  }
-/*I was trying to use this to create a place for the text to sit in in the About Me section*/
-  .about-me-div {
-    vertical-align: top;
-    text-align: center;
-    margin: 20px 20px;
-    color: white;
+/*this holds the content in the first section 'about me*/
+.box {
+    border: 10px solid black;
+    padding: 20px;
+    margin: 80px;
+    font-size: 20px;
     display: flex;
+    justify-content: center;
   }
 
-  /*this is for the projects section*/
-
-
-
-.grid-item {
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    border: solid;
-    color: black;
-    text-align: center;
-  }
-
+  /*the following is a grid holding the place holder images that will eventually be links to applications*/
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -136,23 +77,41 @@ p {
     padding: 30px;
   }
 
-  .center {
-      text-align: center;
+  .grid-item {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: solid;
+    color: black;
+    text-align: center;
   }
 
-  /*trying this box model for section 1 ok yay its working!*/
-  .div {
-    border: 10px solid black;
-    padding: 20px;
-    margin: 80px;
-    font-size: 20px;
-    display: flex;
+  /*the following holds the contact section text*/
+  .contact-section {
+    font-size: 30px;
+    display: inline-block;
+    padding: 0 100px 50px 100px;
+    border-bottom: 3px solid;
+    margin-bottom: 25px;
+    color: fuchsia;
+    text-align: center;
   }
 
-  .float-left {
-      float: left;
-  }
+/*the following applies to the footer*/
+.footer {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: pink;
+    background-color: black;
+}
 
-  .float-right {
-      float: right;
-  }
+.contact-section h3 {
+    color: white;
+}
+
+
+
+
+
